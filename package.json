@@ -1,0 +1,65 @@
+{
+  "name": "@norauto/log4js2-ajax-appender",
+  "version": "1.0.0-rc1",
+  "description": "An AJAX appender for log2js2 module.",
+  "main": "./bundles/ajax-appender.umd.js",
+  "typings": "./src/ajax-appender.d.ts",
+  "author": {
+    "name": "Norauto / Tech lead community",
+    "email": "techleadcommunity@norauto.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Norauto/log4js2-ajax-appender.git"
+  },
+  "keywords": [
+    "log4js2",
+    "ajax"
+  ],
+  "files": [
+    "bundles",
+    "src",
+    ".babelrc",
+    ".eslintrc.js",
+    "rollup.config.js"
+  ],
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js src",
+    "test:ci": "BABEL_ENV=test nyc --reporter=html --reporter=lcovonly mocha --require babel-core/register -R nyan",
+    "test": "BABEL_ENV=test mocha --require babel-core/register -R nyan -w",
+    "build": "BABEL_ENV=production rollup --config"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "log4js2": "^1.0.2"
+  },
+  "peerDependencies": {
+    "log4js2": "1.0.2",
+    "axios": "0.16.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "sinon": "^4.0.1",
+    "sonar-scanner": "^3.0.3"
+  },
+  "publishConfig": {
+    "registry":""
+  }
+}
