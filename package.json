@@ -5,7 +5,7 @@
   "main": "./bundles/ajax-appender.umd.js",
   "typings": "./src/ajax-appender.d.ts",
   "author": {
-    "name": "Norauto / Tech lead community",
+    "name": "NorautoTechLab",
     "email": "techleadcommunity@norauto.com"
   },
   "license": "MIT",
@@ -29,7 +29,7 @@
   },
   "scripts": {
     "lint": "eslint --ext .js src",
-    "test:ci": "BABEL_ENV=test nyc --reporter=html --reporter=lcovonly mocha --require babel-core/register -R nyan",
+    "test:ci": "BABEL_ENV=test nyc --reporter=html --reporter=lcovonly --reporter=text mocha --require babel-core/register -R spec",
     "test": "BABEL_ENV=test mocha --require babel-core/register -R nyan -w",
     "build": "BABEL_ENV=production rollup --config"
   },
@@ -58,8 +58,5 @@
     "rollup-plugin-babel": "^3.0.2",
     "sinon": "^4.0.1",
     "sonar-scanner": "^3.0.3"
-  },
-  "publishConfig": {
-    "registry":""
   }
 }
