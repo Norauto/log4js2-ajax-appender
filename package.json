@@ -5,7 +5,9 @@
   "main": "./bundles/ajax-appender.umd.js",
   "typings": "./src/ajax-appender.d.ts",
   "author": {
-    "name": "NorautoTechLab"
+    "name": "NorautoTechLab",
+    "email": "techleadcommunity@norauto.com",
+    "url": "https://www.norauto.fr/-cms-norauto.com.html"
   },
   "license": "MIT",
   "repository": {
