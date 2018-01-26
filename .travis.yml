@@ -9,6 +9,6 @@ script:
 
 deploy:
   provider: npm
-  api_key: "2de7bbaf-1288-4bdd-93f7-f79bccc33329"
+  api_key: $NPM_TOKEN
   on:
     tags: true
