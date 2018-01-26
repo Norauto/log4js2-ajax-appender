@@ -61,5 +61,8 @@
     "rollup-plugin-babel": "^3.0.2",
     "sinon": "^4.0.1",
     "sonar-scanner": "^3.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
