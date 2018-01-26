@@ -20,7 +20,7 @@ You will need the following things properly installed on your computer :
 This module required log4js2 and axios on your project to work. Install it and these dependencies like so :
 
 ```
-$ npm add log4js2 axios log4js2-ajax-appender
+$ npm add log4js2 axios @norauto/log4js2-ajax-appender
 ```
 
 ### Usage
