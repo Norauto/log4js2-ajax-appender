@@ -9,6 +9,7 @@ script:
 
 deploy:
   provider: npm
+  email: "techleadcommunity@norauto.com"
   api_key: $NPM_TOKEN
   on:
     tags: true
