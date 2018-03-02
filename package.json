@@ -35,12 +35,12 @@
     "build": "BABEL_ENV=production rollup --config"
   },
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.18.0",
     "log4js2": "^1.0.2"
   },
   "peerDependencies": {
     "log4js2": "1.0.2",
-    "axios": "0.16.2"
+    "axios": "0.18.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
