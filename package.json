@@ -32,7 +32,8 @@
     "lint": "eslint --ext .js src",
     "test:ci": "BABEL_ENV=test nyc --reporter=lcovonly mocha --require babel-core/register -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test": "BABEL_ENV=test mocha --require babel-core/register -R nyan -w",
-    "build": "BABEL_ENV=production rollup --config"
+    "build": "BABEL_ENV=production rollup --config",
+    "release": "standard-version --commit-all"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -60,7 +61,7 @@
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.2",
     "sinon": "^4.0.1",
-    "sonar-scanner": "^3.0.3"
+    "standard-version": "^4.3.0"
   },
   "publishConfig": {
     "access": "public"
