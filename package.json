@@ -33,7 +33,7 @@
     "test:ci": "BABEL_ENV=test nyc --reporter=lcovonly mocha --require babel-core/register -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test": "BABEL_ENV=test mocha --require babel-core/register -R nyan -w",
     "build": "BABEL_ENV=production rollup --config",
-    "release": "standard-version --commit-all && git push https://${GITHUB_TOKEN}@github.com/Norauto/log4js2-ajax-appender.git --follow-tags origin HEAD"
+    "release": "standard-version --commit-all && git push https://${GITHUB_TOKEN}@github.com/Norauto/log4js2-ajax-appender.git --follow-tags $(git rev-parse --abbrev-ref HEAD):master"
   },
   "dependencies": {
     "axios": "^0.18.0",
