@@ -1,6 +1,6 @@
 {
   "name": "@norauto/log4js2-ajax-appender",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An AJAX appender for log2js2 module.",
   "main": "./bundles/ajax-appender.umd.js",
   "typings": "./src/ajax-appender.d.ts",
