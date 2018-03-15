@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.9"></a>
+## [1.1.9](https://github.com/Norauto/log4js2-ajax-appender/compare/v1.1.8...v1.1.9) (2018-03-15)
+
+
+### Bug Fixes
+
+* **build:** Update publication detection script ([#25](https://github.com/Norauto/log4js2-ajax-appender/issues/25)) ([d585ca5](https://github.com/Norauto/log4js2-ajax-appender/commit/d585ca5))
+
+
+
 <a name="1.1.8"></a>
 ## [1.1.8](https://github.com/Norauto/log4js2-ajax-appender/compare/v1.1.7...v1.1.8) (2018-03-15)
 
