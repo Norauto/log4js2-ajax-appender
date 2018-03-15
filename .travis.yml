@@ -2,15 +2,17 @@ language: node_js
 node_js:
   - "node"
 
+env:
+  - CAN_PUBLISH=$(sh ./.can-publish.sh)
 script:
   - npm run lint
   - npm run test:ci
   - npm run build
-  - echo $TRAVIS_BRANCH && echo $TRAVIS_PULL_REQUEST
+  - if [ $TRAVIS_BRANCH == 'master' ] && [ $TRAVIS_PULL_REQUEST == 'false' ]; then npm run release; fi
 
 deploy:
   - provider: npm
     email: "techleadcommunity@norauto.com"
     api_key: $NPM_TOKEN
     on:
-      branch: master
+      condition: "$CAN_PUBLISH = 'true'"
