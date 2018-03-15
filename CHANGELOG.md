@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.7"></a>
+## [1.1.7](https://github.com/Norauto/log4js2-ajax-appender/compare/v1.1.6...v1.1.7) (2018-03-15)
+
+
+### Bug Fixes
+
+* **build:** Configure travis to publish only on master ([#23](https://github.com/Norauto/log4js2-ajax-appender/issues/23)) ([5ec45ac](https://github.com/Norauto/log4js2-ajax-appender/commit/5ec45ac))
+
+
+
 <a name="1.1.6"></a>
 ## [1.1.6](https://github.com/Norauto/log4js2-ajax-appender/compare/v1.1.5...v1.1.6) (2018-03-14)
 
